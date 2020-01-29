@@ -58,9 +58,9 @@ public interface DynamoDbEnhancedAsyncClient {
      * The builder definition for a {@link DynamoDbEnhancedAsyncClient}.
      */
     interface Builder {
-        DynamoDbEnhancedAsyncClient.Builder dynamoDbClient(DynamoDbAsyncClient dynamoDbAsyncClient);
+        Builder dynamoDbClient(DynamoDbAsyncClient dynamoDbAsyncClient);
 
-        DynamoDbEnhancedAsyncClient.Builder extendWith(MapperExtension mapperExtension);
+        Builder extendWith(MapperExtension mapperExtension);
 
         DynamoDbEnhancedAsyncClient build();
     }
